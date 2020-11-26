@@ -330,6 +330,14 @@ public class JavaFxUI {
         app.enqueue(task);
     }
 
+    /**
+     * Get the JmeFxContainer that is being used to manage Jfx with Jme.
+     * @return the current implementation of JmeFxContainer in use.
+     */
+    public JmeFxContainer getJmeFxContainer() {
+        return container;
+    }
+
     private class JavaFxUpdater extends BaseAppState {
 
         private Camera cam;
